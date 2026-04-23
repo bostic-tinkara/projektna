@@ -1,2 +1,6 @@
+# Rust build artifacts
 /target
 **/*.rs.bk
+
+# Cargo
+Cargo.lock
