@@ -1,1 +1,0 @@
-C:\Users\hanal\Documents\faks\2.\ letnik\programiranje-2\projektna\target\debug\projektna.exe: C:\Users\hanal\Documents\faks\2.\ letnik\programiranje-2\projektna\src\main.rs C:\Users\hanal\Documents\faks\2.\ letnik\programiranje-2\projektna\src\ovire\kvadrat.rs C:\Users\hanal\Documents\faks\2.\ letnik\programiranje-2\projektna\src\ovire\mod.rs
