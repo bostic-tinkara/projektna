@@ -2,25 +2,22 @@
 
 use super::Ovira;
 
-pub struct Trikotnik<T> {
-    x: f64,
-    _marker: std::marker::PhantomData<T>,
+pub struct Trikotnik {
+    pub visina: f64,
+    pub sirina: f64,
 }
 
-impl<T> Ovira<T> for Trikotnik<T> {
-    fn name(&self) -> &str {
-        todo!()
+impl Ovira for Trikotnik { 
+    fn new() -> Self {
+        Trikotnik { visina: 1., sirina: 1. }
     }
 
-    fn update(&mut self, speed: f64) {
-        self.x -= speed // se premakne levo
-    }
-
-    fn draw(&self) {
-        todo!()
-    }
-
-    fn se_dotika(&self, player_y: f64) -> bool {
-        todo!()
+    //fn draw(&self) {
+    //    todo!()
+    //}
+    //grafika kasneje 
+    
+    fn stolpen(&self) -> bool {
+        false
     }
 }

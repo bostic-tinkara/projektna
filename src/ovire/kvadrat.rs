@@ -3,25 +3,22 @@
 
 use super::Ovira;
 
-pub struct Kvadrat<T> {
-    ime: String,
-    _marker: std::marker::PhantomData<T>,
+pub struct Kvadrat {
+    pub visina: f64,
+    pub sirina: f64,
 }
 
-impl<T> Ovira<T> for Kvadrat<T> {
-    fn name(&self) -> &str {
-        todo!()
+impl Ovira for Kvadrat {
+    fn new() -> Self {
+        Kvadrat { visina: 1., sirina: 1. }
     }
 
-    fn update(&mut self, speed: f64) {
-        todo!()
-    }
-
-    fn draw(&self) {
-        todo!()
-    }
-
-    fn se_dotika(&self, player_y: f64) -> bool {
-        todo!()
+    //fn draw(&self) {
+    //    todo!()
+    //}
+    // grafika kasneje
+    
+    fn stolpen(&self) -> bool {
+        true
     }
 }
