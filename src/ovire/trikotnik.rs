@@ -3,13 +3,21 @@
 use super::Ovira;
 
 pub struct Trikotnik {
-    pub visina: f64,
-    pub sirina: f64,
+    pub visina: u64,
+    pub sirina: u64,
 }
 
 impl Ovira for Trikotnik { 
     fn new() -> Self {
-        Trikotnik { visina: 1., sirina: 1. }
+        Trikotnik { visina: 2, sirina: 2 }
+    }
+
+    fn visina(&self) -> u64 {
+        self.visina
+    }
+
+    fn sirina(&self) -> u64 {
+        self.sirina
     }
 
     //fn draw(&self) {
@@ -19,5 +27,9 @@ impl Ovira for Trikotnik {
     
     fn stolpen(&self) -> bool {
         false
+    }
+
+    fn naredi_stolp(visina: u64) -> Option<Box<Self>> {
+        None
     }
 }

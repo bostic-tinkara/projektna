@@ -1,5 +1,10 @@
 use crate::{ovire::*, player::*};
 
+enum Ovire {
+    Kvadrat,
+    Trikotnik,
+}
+
 pub struct Mapa {
     stopnja: Stopnja,
     poligon: Vec<(f64, Ovire)>,
@@ -19,7 +24,9 @@ impl Mapa {
     }
 }
 
-struct OviraMapa {
-    pozicija: f64,
-    lik: Ovire,
-}
+
+// work in progress
+// struct OviraMapa {
+//     pozicija: f64,
+//     lik: Ovire,
+// }

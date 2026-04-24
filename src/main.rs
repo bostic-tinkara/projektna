@@ -1,7 +1,6 @@
 mod ovire;
 mod player;
 mod mapa;
-#[cfg(tests)]
 mod testi;
 
 use ovire::*;

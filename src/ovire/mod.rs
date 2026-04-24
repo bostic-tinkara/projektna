@@ -6,13 +6,12 @@ pub use trikotnik::*;
 
 use crate::player;
 
+
 pub trait Ovira {
     fn new() -> Self;
+    fn visina(&self) -> u64;
+    fn sirina(&self) -> u64;
     //fn draw(&self);
     fn stolpen(&self) -> bool; // true ce lahko na lik damo drug lik
-}
-
-pub enum Ovire {
-    Kvadrat,
-    Trikotnik,
+    fn naredi_stolp(visina: u64) -> Option<Box<Self>>;
 }
