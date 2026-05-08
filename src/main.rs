@@ -9,6 +9,7 @@ use player::*;
 
 #[macroquad::main("Geometry Dash Lite")]
 async fn main() {
+
     loop {
 
         let bubble_gum = Color::new(1.00, 0.43, 0.76, 1.00);
@@ -16,6 +17,7 @@ async fn main() {
 
         draw_text("Hello Macroquad", 20.0, 30.0, 30.0, WHITE);
         draw_rectangle(screen_width() / 2.0 - 60.0, screen_height() / 2.0-30.0, 120.0, 60.0, SKYBLUE);
+        draw_line(0.0, ground_y, screen_width(), ground_y, 2.0, WHITE);
 
         next_frame().await
     }
