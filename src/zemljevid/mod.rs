@@ -1,4 +1,3 @@
-use macroquad::color::PINK;
 use macroquad::prelude::*;
 
 use crate::{ovire::*, player::*};
